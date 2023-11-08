@@ -49,6 +49,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  /* transition: all 0.3s ease; */
 }
 
 * {
@@ -64,6 +65,7 @@ body {
   color: #555;
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 /***********************/
@@ -75,7 +77,6 @@ body {
   margin: 0 auto;
   padding: 0 3.2rem;
 }
-
 
 .grid {
   display: grid;
@@ -147,8 +148,6 @@ body {
   color: #cf711f;
 }
 
-
-
 .btn,
 .btn:link,
 .btn:visited {
@@ -159,7 +158,6 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
 
-
   /* Only necessary for .btn */
   border: none;
   cursor: pointer;
@@ -169,7 +167,6 @@ body {
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
 }
-
 
 .btn--full:link,
 .btn--full:visited {
@@ -266,7 +263,6 @@ body {
 }
 
 /* HELPER/SETTINGS CLASSES */
-
 
 .margin-right-sm {
   margin-right: 1.6rem !important;

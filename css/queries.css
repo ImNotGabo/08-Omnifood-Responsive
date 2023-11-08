@@ -150,26 +150,15 @@ Instead, 1rem = 1em = 16px */
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(5px);
     width: 100%;
+    max-width: 40rem;
     height: 100vh;
     transform: translateX(100%);
-
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
-    transition: all 0.5s ease-in;
-
-    /* Hide Nav */
-    /* Allows NO transitions at all
-    display: none;
-    */
-
-    /* Hide it visually */
+    right: 0;
+    transition: all 0.3s ease-in-out;
     opacity: 0;
-
-    /* 2) Make it unnacessible to mouse and keyboard*/
     pointer-events: none;
-
-    /* 3) Hide it from screen readers */
     visibility: hidden;
   }
 
@@ -269,7 +258,9 @@ Instead, 1rem = 1em = 16px */
   .hero-img {
     width: 80%;
   }
-
+  .main-nav {
+    max-width: 100%;
+  }
   .btn,
   .btn:link,
   .btn:visited {
